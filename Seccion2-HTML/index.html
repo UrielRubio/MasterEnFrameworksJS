@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<hmtl lang="es"></hmtl>
+<head>
+    <title>
+        Mi primera página web
+    </title>
+</head>
+
+<body>
+    <h1>
+        Mi Titulo de mi web
+    </h1>
+    <h2>Bienvenidos a mi web</h2>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and type
+        setting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it
+        to make a type specimen book.
+        It has survived not only five centuries,
+        but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised
+        in the 1960s with the release of Letraset sheets
+        containing Lorem Ipsum passages, and more recently with
+        desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+    </p>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and type
+        setting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it
+        to make a type specimen book.
+        <blockquote> has survived not only five centuries,
+            but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised
+            in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
+        </blockquote>
+    </p>
+    <hr />
+    <h2>Imágenes en HTML</h2>
+    <img src="images/JSFrameworks.jpg" alt="JavaScript frameworks. Image not showed" ,
+        title="Those are the javascript frameworks." height="300px" />
+
+    <hr />
+    <h3>Tercer encabezado</h3>
+    <p>
+        <strong>Texto en negrita</strong>
+        <em>Texto en cursiva</em>
+        <i>Texto en cursiva tambíen</i>
+        <span id="resaltado" , class="rojo amarillo">la clase span no hace nada a nivel de texto, pero se pueden agregar
+            identificadores para modificar parte del texto a nivel CSS.</span>
+
+    </p>
+    <hr />
+    <h3>Listas</h3>
+    <h4>Listas ordenadas</h4>
+    <ol>
+        <li>Manzanas
+            <ol>
+                <li>Roja</li>
+                <li>Verde</li>
+            </ol>
+        </li>
+        <li>Peras</li>
+        <li>Naranjas</li>
+        <li>Sandia</li>
+    </ol>
+    <h4>Listas ordenadas</h4>
+    <ul>
+        <li>Manzanas
+            <ul>
+                <li>Roja</li>
+                <li>Verde</li>
+            </ul>
+        </li>
+        <li>Peras</li>
+        <li>Naranjas</li>
+        <li>Sandia</li>
+    </ul>
+    <hr />
+    <h3>Tablas</h3>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>País</th>
+        </tr>
+            <td>Uriel</td>
+            <td colspan="2">Rubio</td>
+        <tr>
+        </tr>
+            <td>Victor</td>
+            <td>Robles</td>
+            <td>España</td>
+        <tr>
+        </tr>
+        <td>Dylan</td>
+        <td>Rubio</td>
+        <td>México</td>
+        <tr>
+        </tr>
+            <td>Raul</td>
+            <td>Morquecho</td>
+            <td>México</td>
+        <tr>
+
+        </tr>
+    </table>
+    <hr/>
+    <h3>Formularios</h3>
+    <form action="">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text"  name="nombre" placeholder="Escribe tu nombre..."/>
+        </p>
+        <p>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion"></textarea>
+        </p>
+        
+        <input type="radio" name="genero" value="hombre" >Hombre<br/>
+        <input type="radio" name="genero" value="mujer">Mujer<br/>
+        <input type="radio" name="genero" value="nada">Nada<br/>
+
+        <select name="genero2">
+            <option value="hombre" >Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="nada">Nada</option>
+        </select>
+        <br/>
+        <input type="submit" value="Enviar formulario" />
+        
+    </form>
+</body>
+
+</html>
