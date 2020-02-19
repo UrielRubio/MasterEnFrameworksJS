@@ -1,0 +1,105 @@
+/* SELECTOR DE ETIQUETA */
+body{
+    text-align: center;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased; /* Indicamos que nos suavize la fuente en el navegador webkit*/
+    -moz-font-smoothing: antialiased; /* Para no suavize también en Mozilla */
+    -moz-osx-smoothing: antialiased; /* Para no suavize también en Mozilla en MAC */
+}
+
+/* Las siguientes clases e ID's a maquetar se encuentran etiquetadas
+con su respectivo nombre en el archivo HTML */
+
+/* SELECTOR DE ID */
+#header { /* Maquetamos toda la clase  header */ 
+    height: 120px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 5px solid #61dafb;
+}
+/* SELECTOR DE CLASE */
+.center { /* Maquetando la clase center */
+    width: 75%;
+    margin: 0px auto; /* auto: centra automaticamente al alemento*/
+}
+
+/* SELECTOR DE CLASE */
+.clearfix { /*Limpiamos el espacio entre lo flotado (el logo y el menu). 
+    Para que lo de abajo no se suba. https://developer.mozilla.org/en-US/docs/Web/CSS/clear*/
+    clear: both;
+    float: none;
+}
+/* SELECTOR DE ID */
+#logo { /* Maquetamos el logo */
+    width: 30%;
+    font-size: 30px;
+    float: left; /* para que mueva el logo a la parte izquierda */
+    margin-top: 35px; /* Margin de arriba */
+}
+
+/* SELECTOR DE ID */
+#logo img { /*Maquetando la imagen que esta dentro del ID logo */
+    display: block; /* Si el elmento lo manejamos como block, podemos mmanejarlo mejor*/
+    float: left;
+    height: 60px;
+    margin-top: -9px;/* Del margin dado en el ID #logo, le restamo 10px */
+    margin-right: -5px;
+    /* Aplicando una animacion al logo*/
+    /* animation: nombre-de-keyframe infinite 15s linear; para ello se define un @keyframe */
+    animation: girar infinite 15s linear;
+}
+/* Keyframe para definir una animacion */
+@keyframes girar {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* SELECTOR DE ID */
+#brand { /* Maquetando el ID brand */
+    display: block;
+    margin: 0px;
+    float: left;
+}
+
+/* SELECTOR DE ID */
+#menu { /* Maquetando el ID menu*/
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+
+/* SELECTOR DE ID */
+#menu ul{ /* Maquetando el elemento ul dentro del ID menu*/
+    line-height: 85px;
+    width: 60%;
+    float: right;
+}
+
+/* SELECTOR DE ID */
+#menu ul li{ /* Maquetando el elemento li dentro del ID menu*/
+    display: inline-block; /*Muestra los enlaces en linea*/
+    list-style: none; /*Para quitar las vinetas*/
+    height: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* SELECTOR DE ID */
+#menu a{ /* Maquetando el elemento a (enlaces) dentro del ID menu*/
+    text-decoration: none; /*Quitar el subrayado de los links del menu*/
+    color: #444;
+    transition: 300ms all; /*Al momento de hacer hover sobre cualquier del menu elemento*/
+}
+
+/* SELECTOR DE ID */
+#menu a:hover{ /* Maquetando el elemento a (enlaces) dentro del ID menu, 
+    especificamente al pasar el ratón sobre un enlace*/
+    color: #279fc0;
+}
