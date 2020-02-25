@@ -45,50 +45,34 @@
             <div class="clearfix"></div>
         </div>
     </header>
-    <div id="slider" class="slider-big">
-        <h1>Bienvenido al curso de React con Victor Robles de victorrobles.com</h1>
-        <a href="#" class="btn-white">Ir al blog</a>
-    </div>
+
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Últimos artículos</h2>
-            <!-- CLONADO DE ARTICULOS -->
-            <script type="text/javascript">//Script clonador de articulos
-                window.addEventListener("load", function () { // Se ejecuta cuando esta cargada toda la pagina
-                    var template = document.getElementById("article-template");
-                    var articles = document.getElementById("articles");
 
-                    for (var i = 2; i < 8; i++) {
-                        var clonado = template.cloneNode(true); //clonamos toda la template
-                        clonado.removeAttribute("id");
+            <h1 class="subheader">Formulario</h1>
 
-                        var h2 = clonado.getElementsByTagName("h2")[0]; //Tomamos lo que hay en h2
-                        h2.innerHTML = h2.textContent + ' ' + i; //Agregamo el numero i
+            <form class="mid-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" />
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" />
+                </div>
+                <div class="form-group">
+                    <label for="biografia">Biografía</label>
+                    <textarea name="bio"></textarea>
+                </div>
+                <div class="form-group radiobuttons" >
+                    <input type="radio" name="genero", value="hombre" />Hombre
+                    <input type="radio" name="genero", value="mujer" />Mujer
+                    <input type="radio" name="genero", value="otro" />Otro
+                </div>
+                <div class="clearfix"></div>
+                <input type="submit" value="Enviar" class="btn btn-success" />
+            </form>
 
-
-                        articles.appendChild(clonado); //ponemos el articulo en la pagina                    
-                    }
-                });
-            </script>
-
-            <!-- LISTADO DE ARTICULOS -->
-            <div id="articles">
-                <article class="article-item" id="article-template">
-                    <div class="image-wrap">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.R9bwqy4Snm3KPCxBWmnkkwHaEK%26pid%3DApi&f=1"
-                            , alt="Imagen de un paisaje" />
-                    </div>
-
-                    <h2>Artículo de prueba</h2>
-                    <span class="date">
-                        Hace 5 minutos
-                    </span>
-                    <a href="#">Leer más.</a>
-                    <div class="clearfix"></div>
-                </article>
-
-                <!-- AGREGADO DE ARTICULOS VÍA JS -->
-            </div>
         </section>
         <aside id="sidebar">
             <div id="nav-blog" class="sidebar-item">
